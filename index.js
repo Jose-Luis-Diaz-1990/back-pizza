@@ -26,22 +26,22 @@ cloudinary.config({
     api_secret: process.env.CLOUD_API_SECRET
 });
 
-const whitelist =['http://localhost:3000/', 'http://localhost:4200/', 'http://localhost:50021/'];
-  const corsOptions = {
-      credentials: true,
-      origin: function(origin, callback) {
-          if(whitelist.indexOf(origin) !== -1) {
-              callback(null, true)
-          } else {
-              callback(new Error('Not allowed by CORS'))
-          }
-      }
-  };
+// const whitelist =['http://localhost:3000/', 'http://localhost:4200/', 'http://localhost:50021/'];
+//   const corsOptions = {
+//       credentials: true,
+//       origin: function(origin, callback) {
+//           if(whitelist.indexOf(origin) !== -1) {
+//               callback(null, true)
+//           } else {
+//               callback(new Error('Not allowed by CORS'))
+//           }
+//       }
+//   };
 
 //JSWBTKN
 server.set("secretKey", "moneHeistApi");
 
-server.use(cors(corsOptions));
+server.use(cors({origin:'*'}));
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 
