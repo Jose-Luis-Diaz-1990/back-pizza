@@ -11,7 +11,6 @@ const pizzasSchema = new mongoose.Schema(
         price: { type: Number, required: true},        
         account: {type: Number},
         picture: String,
-        pricebase: Number
     },
     {
         timestamps: true
