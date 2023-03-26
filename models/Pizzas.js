@@ -7,7 +7,7 @@ const pizzasSchema = new mongoose.Schema(
         size: { type: String, enum: ["pequeña", "mediana", "familiar"]},
         dip: {type: String, enum: ["barbacoa", "carbonara", "tomate", "napolitana"]},
         ingredients: [{type: mongoose.Types.ObjectId, required: true, ref:"Ingredients"}],
-        pricebase:{ type: Number, required: true},    
+        pricebase:{ type: Number},    
         price: { type: Number, required: true},        
         account: {type: Number},
         picture: String,
