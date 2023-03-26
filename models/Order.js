@@ -8,11 +8,12 @@ const orderSchema = new mongoose.Schema({
           ref: 'Pizza',
           required: true
         },
-        quantity: {
+      quantity: {
           type: Number,
           required: true
         },
-        price: {
+      /* Tamaño */ 
+      price: {
           type: Number,
           required: true
         }
