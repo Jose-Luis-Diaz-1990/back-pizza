@@ -1,23 +1,15 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
-  items: [{ type:string}]   
-      /*pizza: {
+  items: [{
+      pizza: {
           type: mongoose.Schema.Types.ObjectId,
+
           ref: 'Pizza',
-          required: true
-        }
-        ,
-      quantity: {
-          type: Number,
-          //required: true
-        },
-      
-      price: {
-          type: Number,
-          //required: true
-        }
-     }*/
+           required: true 
+           }
+      }
+     ]
   ,
   total: {
     type: Number,
