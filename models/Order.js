@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
-  items: [{pizza: string}]   
+  items: [String]   
   ,
   total: {
     type: Number,
