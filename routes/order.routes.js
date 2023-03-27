@@ -38,6 +38,26 @@ orderRouter.get('/', async (req, res, next) => {
     }
   });
 
+  orderRouter.post('/pizzas', async (req, res, next) => {
+
+  try {
+    
+    const newOrder = new Order({ ...req.body });
+    
+    const createdOrder = await newOrder.save();
+    
+    return res.status(201).json(createdOrder);
+    
+  
+    
+   } catch (err) {
+    
+    next(err);
+    
+    }
+    
+      });
+
   orderRouter.put('/:id', async (req, res, next) => {
     try {
       const order = await Order.findByIdAndUpdate(req.params.id, {
