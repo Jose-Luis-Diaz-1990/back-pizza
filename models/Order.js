@@ -5,8 +5,7 @@ const orderSchema = new mongoose.Schema({
       {
       pizza: {
           type: mongoose.Schema.Types.ObjectId,
-          ref: 'Pizza',
-          required: true
+          ref: 'Pizza'
         }
       }
   ],
