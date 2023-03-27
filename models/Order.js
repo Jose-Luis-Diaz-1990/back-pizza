@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
-  items: [{    
-      pizza: {
+  items: [{ type:string}]   
+      /*pizza: {
           type: mongoose.Schema.Types.ObjectId,
           ref: 'Pizza',
           required: true
         }
-        /*,
+        ,
       quantity: {
           type: Number,
           //required: true
@@ -16,9 +16,9 @@ const orderSchema = new mongoose.Schema({
       price: {
           type: Number,
           //required: true
-        }*/
-     }
-  ],
+        }
+     }*/
+  ,
   total: {
     type: Number,
     
