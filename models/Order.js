@@ -7,14 +7,6 @@ const orderSchema = new mongoose.Schema({
           type: mongoose.Schema.Types.ObjectId,
           ref: 'Pizza',
           required: true
-        },
-        quantity: {
-          type: Number,
-          required: true
-        },
-        price: {
-          type: Number,
-          required: true
         }
       }
   ],
