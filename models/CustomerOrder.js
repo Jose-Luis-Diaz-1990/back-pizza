@@ -7,7 +7,7 @@ const customerOrderSchema = new mongoose.Schema(
         email: {type: String},
         phoneNumber: {type: String},
         shippingAddress: {type: String},
-        store: {type: String},
+        store: {type: String}
     },
     {
         timestamps: true
