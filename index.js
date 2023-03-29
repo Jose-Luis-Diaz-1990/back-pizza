@@ -74,6 +74,8 @@ server.use('/pizzas', pizzasRouter);
 server.use('/user', userRouter);
 server.use('/ingredients', ingredientsRouter);
 server.use('/order', orderRouter);
+server.use('/customer', customerOrderRouter);
+server.use('/pizzeria-store', pizzeriaStoreRouter);
 
 
 server.use((err, req, res, next) => {
