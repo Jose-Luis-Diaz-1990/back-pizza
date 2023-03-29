@@ -4,7 +4,7 @@ const orderSchema = new mongoose.Schema({
   items: [{pizza: string}]   
   ,
   total: {
-    type: Number,
+    type: Number
   }
 });
 
