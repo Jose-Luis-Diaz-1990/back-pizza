@@ -4,7 +4,7 @@ const pizzeriaStoreSchema = new mongoose.Schema(
     {
         name: { type: String, unique: true},
         address: { type: String, require: true },
-        picture: String,
+        picture: String
     },
     {
         timestamps: true
