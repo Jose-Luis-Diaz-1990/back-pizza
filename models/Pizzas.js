@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const pizzasSchema = new mongoose.Schema(
     {
-        name: { type: String, unique: true},
+        name: { type: String},
         mass: { type: String, enum: ["fina", "normal"] },
         size: { type: String, enum: ["pequeña", "mediana", "familiar"]},
         dip: {type: String, enum: ["barbacoa", "carbonara", "tomate", "napolitana"]},
