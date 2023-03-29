@@ -4,7 +4,7 @@ const orderSchema = new mongoose.Schema({
   items: [String]   
   ,
   total: {
-    type: Number,
+    type: Number
   }
 });
 
